@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>canvas method</title>
+<canvas id="mycanvas" width="200" height="300" style="border:1px solid black"></canvas>
+</head>
+<body>
+<script>
+
+var c=document.getElementById("mycanvas");
+var ctx=c.getContext("2d");
+ctx.shadowColor="red";
+ctx.fillText("hi this",150,160);
+ctx.fillRect(40,50,80,90);
+
+ctx.clearRect(60,70,40,40);
+ctx.fillStyle="blue";
+ctx.fillRect(65,75,30,30);
+
+</script>
+<p>hi this is parthiban
+</p>
+</body>
+</html>

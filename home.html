@@ -1,0 +1,114 @@
+<html><title>online booking</title>
+<head>
+<style type="text/css">
+#submit{
+margin-left:100px;
+background-color:blue;
+}
+th{
+font-size:20px;
+background-color:green;
+}
+td{
+text-align:left;
+font-size:20px;
+}
+table{
+border:1px solid green;
+}
+form{
+float:left;
+margin-right:20px;
+}
+p{
+font-size:20px;
+}
+h2{
+background-color:green;
+border:1px solid green;
+margin-left:460px;
+}
+.auto-style{
+}
+</style>
+</head>
+<body>
+<form name="form1">
+<table>
+<tr>
+<th colspan="2">book your tickets</th>
+</tr>
+
+<tr>
+<td>Name</td>
+<td><input type="text" name="username" placeholder="enter your name" required></td>
+</tr>
+<tr>
+<td>Date of Booking</td>
+<td><input type="date" id="bookingdate" required></td>
+</tr>
+
+<td>Movie</td>
+<td><select id="sel">
+<option value="0">Select movie</option>
+<optgroup label="Drama">
+<option value="1">Nightmare</option>
+<option value="2">Along Polly Cmae</option>
+</optgroup>
+<optgroup label="Thriller">
+<option value="3">source code</option>
+<option value="4">if only</option>
+</optgroup>
+<optgroup label="Romantic">
+<option value="5">a walk to remember</option>
+<option value="6">angel</option>
+</optgroup>
+</select></td>
+</tr>
+
+<tr>
+<td>Show toming</td>
+<td><select id="timing">
+<option value="7">select timing</option>
+<option value="8">10:30 am</option>
+<option value="9">5:30 pm</option>
+<option value="10">12:30 pm</option>
+</select></td>
+</tr>
+
+<tr>
+<td>Select Class</td>
+<td>
+<input type="radio" name="rb" required>Platinum</input>
+<input type="radio" name="rb" required>Gold</input>
+<input type="radio" name="rb" required>Exclusive</input>
+</td>
+</tr>
+
+<tr>
+<td>Price</td>
+<td><input type="text" name="disabled"></td>
+</tr>
+<tr>
+<td>Number of Tickets</td>
+<td><input type="text" name="num" placeholder="Enter Tickets" required></td>
+</tr>
+<tr>
+<td>Total Price</td>
+<td><input type="text" name="totalprice" disabled></td>
+</tr>
+<tr>
+<td><input id="submit" type="submit"></td>
+<td><input type="reset"></td>
+</tr>
+</table>
+</form>
+
+<h2> Alerts & Updates</h2>
+<div class="auto-style">
+<p>new payment option of booking tickets</p>
+<p>no refund granted on cancellation of tickets</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+<title>MY WORLD</TITLE>
+<head>
+<style>
+a{
+color:orange;
+font-size:20px;
+}
+th{
+color:orange;
+font-size:30px;
+}
+tr{
+color:orange;
+font-size:30px;
+}
+try{
+color:orange;
+font-size:20px;
+}
+</style>
+
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#coolmenu").hide();
+$("#prooffers").hide();
+$("#bank").mouseenter(function(){
+$("#coolmenu").show(500);
+});
+$("#bank").mouseleave(function(){
+$("#coolmenu").hide(500);
+});
+$("#pro").mouseenter(function(){
+$("#prooffers").show(500);
+});
+$("#pro").mouseleave(function(){
+$("#prooffers").hide(500);
+});
+});s
+</script>
+</head>
+<body>
+
+<a href="" id="bank">Bank Offers</a>
+<a href="" id="pro">Lucky draw</a>
+<div id="coolmenu" style="width: 500px; height:400px; padding-top:0px;
+  border:4px solid orange; background-color:black;">
+
+<table>
+<tr>
+<th><b>Bank Offers</b></th>
+</tr>
+<tr><td>use ACA Bank Credit Card and Avail buy 1 get 1 offer</td></tr>
+<tr><td>use SBI Bank Credit Card and 10% Tickets offer</td></tr>
+<tr><td>use HDFE Bank Credit Card and Avail buy 1 get 1 offer</td></tr>
+</table>
+</div>
+
+
+<div id="prooffers" style="width: 500px; height:400px; padding-top:0px;
+  border:4px solid orange; background-color:black;">
+
+<table>
+<tr>
+<th><b>Lucky Draw</b></th>
+</tr>
+<tr><td>book online tickets and get chance to grab dinner vouchers at aruna</td></tr>
+<tr><td>register on your website </td></tr>
+<tr><td>Avail 20% gift offers</td></tr>
+</table>
+</div>
+</body>
+</html>

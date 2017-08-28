@@ -1,0 +1,110 @@
+<html><title> Login</title>
+<head>
+<script>
+function checkNmae()
+{
+if(!form1.username.value.match(/^[a-zA-Z]+$/)&& form1.username.value !="")
+  {
+  form1.username.value="";
+  form1.username.focus();
+  alert("please enter only alphapets in text")
+  }
+}
+function checkPasswor()
+{
+if (form1.pass1.value!=form1.pass2.value)
+  {
+   alert("passwords entered not match");
+  }
+else
+if(typeof (Storage) !=="undefined"){
+localStorage.userid = form1.username.value;
+localStorage.passwrd = form1.pass1.value;
+alert("Registered");
+}
+}
+function login()
+{
+if (typeof (Storage) !=="undefined")
+{
+if(form2.username1.value == localStorage.userid){
+form2.pass3.value=localStorage.passwrd;
+}
+
+}
+}
+function onSubmit()
+{
+if((form2.username1.value!="")&&
+(form2.pass3.value==localStorage.passwrd))
+alert("signed in");
+else
+alert("password do not match");
+}
+</script>
+<link type="text/css" rel="stylesheet"
+href="ExternalStylesheet\homestylesheet.css"/>
+<style type="text/css">
+th{
+color:orangered;
+}
+#form2{
+position:absolute;
+top:50px;
+left:400px;
+width:380px;
+height:200px;
+border:3px solid orangered;
+margin-left:190px;
+}
+#form1{
+width:380px;
+height:200px;
+border:3px solid orangered;
+margin-left:60px;
+margin-top:50px;
+}
+button{
+margin-left:80px;
+color:white;
+background-color:orangered;
+}
+</style>
+</head>
+<body>
+<form id="form1" name="Sign Up" onsubmit="checkPassword()">
+<table>
+<tr>
+<th colspan="2"><b><i>Create an Account</i></b></th>
+</tr>
+<tr>
+<td>Name:</td><td><input type="text" name="username" onkeyup="checkName();" required></td>
+</tr>
+<tr>
+<td>Password:</td><td><input type="password" name="pass1" required></td>
+</tr>
+<tr>
+<td>Confirm Password:</td><td><input type="password" name="pass2" required></td>
+</tr>
+<tr>
+<td><br><button type="submit" onsubmit();">
+
+<table>
+<tr>
+<th colspan="2"><b><i>Sign In</i></b></th>
+</tr>
+<tr>
+<td>Name:</td><td><input type="text" name="username1"
+onkeyup="checkName();" onchange="login();" required></td>
+</tr>
+<tr>
+<td>Password:</td><td><input type="password" name="pass3" required>
+</td>
+</tr>
+<tr>
+<td><br><button type="submit" > Sign In</td></tr>
+</table>
+</form>
+
+</body>
+</html>
